@@ -2,6 +2,23 @@
 
 A minimal, interview-ready **order matching engine** written in Java — no frameworks, no external dependencies, plain Maven console application.
 
+Built as a deep-dive into exchange internals: price-time priority matching, order book data structures, and the maker/taker model used by real trading venues.
+
+**Author:** [Rohit Kori](https://github.com/brawnybytes) ([brawnybytes](https://github.com/brawnybytes))
+
+---
+
+## Status
+
+- ✅ Core matching logic (LIMIT, MARKET, partial fills, cancellation)
+- ✅ Multi-symbol routing with isolated order books
+- ✅ Five-scenario runnable demo
+- ⬜ Unit tests (planned)
+- ⬜ Concurrency / throughput benchmarking (planned)
+- ⬜ FIX protocol order entry (out of scope for this version)
+
+This is a learning/demonstration project, not a production system — see [Design Decisions](#design-decisions) below for what's intentionally left out and why.
+
 ---
 
 ## What Is a Matching Engine?
